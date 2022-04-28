@@ -1,0 +1,30 @@
+import { GwDomNode, GwEventType, GwMap } from "../types/gwTypes";
+import { GwRegisteredSystem } from "../core/util/GwRegisteredSystem";
+export declare class GwFileValue extends GwRegisteredSystem {
+    static readonly BYTES_PER_MB: number;
+    getSystemName(): string;
+    private readonly fileInputSuffix;
+    private readonly fileTextSuffix;
+    browseHandler(node: GwDomNode, args: GwMap, event: GwEventType): void;
+    fileChangeHandler(node: HTMLInputElement, args: GwMap, event: GwEventType): void;
+    registerDropzone(dropzoneMap: GwMap): void;
+    dropFileHandler(node: GwDomNode, args: GwMap, event: DragEvent): void;
+    private convertToMB(size);
+    private showAlert(messageText);
+    private uploadSizeError(sizeLimit, tooBigFileNames);
+    private uploadTotalSizeError(numRejectedFiles, totalSize, availableSpace);
+    private uploadTotalCountError(numRejectedFiles, availableCount);
+    private uploadOtherError(otherErrors);
+    private processUploadResponse(response);
+    private verifyUploadFiles(fileWidgetId, files);
+    uploadFiles(fileWidgetId: string, files: FileList, completeCallback: Function): void;
+    downloadManually(parameters: GwMap): void;
+    downloadHandler(node: GwDomNode, args: GwMap, event: GwEventType): void;
+    private postOnChange(fileWidgetId);
+    private getFileInput(fileWidgetId);
+    private getFileInputOrThrow(fileWidgetId);
+    private fileName(files);
+    private createFormData(widgetId, files);
+    private clearFileInput(fileInput);
+}
+export declare const gwFileValue: GwFileValue;

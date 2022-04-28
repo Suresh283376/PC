@@ -1,0 +1,40 @@
+//TODO: this all needs to get themed
+$gw-bz--border-col: #DDDDDD;
+$gw-bz--border: gw-border($gw-bz--border-col);
+
+$gw-bz--row-bg: white;
+$gw-bz--row-hilite-bg: #FFF0B6;
+
+$gw-bz--label-bg: #EFEFEF;
+
+$gw-bz--section-label-col: #999999;
+$gw-bz--section-label-font-size: gw-emFixed(1.25);
+$gw-bz--section-label-border-col: silver;
+$gw-bz--section-label-border-top: gw-pxFixed(3) solid $gw-bz--section-label-col;
+$gw-bz--section-label-border-bottom: gw-pxFixed(1) solid $gw-bz--section-label-col;
+
+.bz-sxs-row {
+  background-color: $gw-bz--row-bg;
+  border-top: $gw-bz--border;
+  border-right: $gw-bz--border;
+}
+
+.bz-sxs-row-hilite {
+  background-color: $gw-bz--row-hilite-bg;
+  border-top: $gw-bz--border;
+  border-right: $gw-bz--border;
+}
+
+.bz-sxs-section-label {
+  color: $gw-bz--section-label-col;
+  background-color: $gw-bz--label-bg;
+  font-size: $gw-bz--section-label-font-size;
+  border-top: $gw-bz--section-label-border-top;
+  border-bottom: $gw-bz--section-label-border-bottom;
+}
+
+.bz-sxs-action-label {
+  background-color: $gw-bz--label-bg;
+  border-top: $gw-bz--border;
+  font-weight: bold;
+}

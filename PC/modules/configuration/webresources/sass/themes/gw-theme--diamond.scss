@@ -1,0 +1,69 @@
+$gw-app--font-family: Verdana, Helvetica, Arial, sans-serif;
+$gw-app--base-font-size--in-px: 12.8px; //@px-allowed
+$gw-app--col: black;
+$gw-app--palette--gray-E: #eaeaea;
+$gw-app--section-primary--bg: $gw-app--palette--gray-E;
+$gw-app--NorthPanel--bg: #89b4d7;
+
+$gw-app--divider--col: #999a9a;
+$gw-app--border--col: #999a9a;
+
+$gw-app--menus--active--bg: #036ec4;
+$gw-app--menus--active--col: white;
+$gw-app--menus--hover--bg: #BFE6FE;
+$gw-app--menus--hover--col: $gw-app--col;
+
+$gw-app--buttons--bg: darken($gw-app--NorthPanel--bg, 15%);
+$gw-app--buttons--col: white;
+$gw-app--buttons--active--bg: #036ec4;
+$gw-app--buttons--active--col: white;
+$gw-app--buttons--hover--bg: #BFE6FE;
+$gw-app--buttons--hover--col: $gw-app--col;
+
+$gw-app--NorthPanel--button--bg: #d8d8d8;
+$gw-app--NorthPanel--button--col: #304B69;
+$gw-app--NorthPanel--use-pill-buttons: true;
+$gw-app--NorthPanel--button--pad-v-rem: gw-remScaled(.34);
+$gw-app--NorthPanel--button--pad-h-rem: gw-remScaled(.6);
+
+$gw-app--NorthPanel--button--active--bg: $gw-app--menus--active--bg;
+$gw-app--NorthPanel--button--hover--bg: mix($gw-app--NorthPanel--button--bg, $gw-app--menus--active--bg, 80%);
+$gw-app--NorthPanel--button--hover--col: $gw-app--NorthPanel--button--col;
+$gw-app--NorthPanel--border--col: darken($gw-app--NorthPanel--button--active--bg, 17%);
+$gw-app--NorthPanel--logo-above-tabs: true;
+$gw-app--NorthPanel--border--width-px: gw-pxFixed(5);
+
+$gw-app--WestPanel--bg: $gw-app--palette--gray-E;
+$gw-app--WestPanel--button--bg: white;
+$gw-app--WestPanel--button--col: $gw-app--col;
+$gw-app--WestPanel--button--active--bg: $gw-app--menus--active--bg;
+$gw-app--WestPanel--button--active--col: $gw-app--menus--active--col;
+$gw-app--WestPanel--button--hover--bg: $gw-app--menus--hover--bg;
+$gw-app--WestPanel--button--hover--col: $gw-app--menus--hover--col;
+$gw-app--WestPanel--button--bottomborder: 0 solid transparent;
+$gw-app--WestPanel--button--topborder: 0 solid transparent;
+$gw-app--WestPanel--button--pad-v-rem: gw-remScaled(.5);
+
+$gw-app--WestPanel--submenu--button--bg: white;
+$gw-app--WestPanel--submenu--button--col: $gw-app--col;
+$gw-app--WestPanel--submenu--button--active--bg: $gw-app--menus--active--bg;
+$gw-app--WestPanel--submenu--button--active--col: $gw-app--menus--active--col;
+$gw-app--WestPanel--submenu--button--hover--bg: $gw-app--menus--hover--bg;
+$gw-app--WestPanel--submenu--button--hover--col: $gw-app--menus--hover--col;
+$gw-app--WestPanel--submenu--button--bottomborder: 0 solid transparent;
+$gw-app--WestPanel--submenu--button--topborder: 0 solid transparent;
+$gw-app--WestPanel--submenu--button--pad-v-rem: gw-remScaled(.5);
+
+$gw-app--WestPanel--default-width-em: gw-emFixed(14);
+
+$gw-app--WestPanel--border-right-width-px: gw-pxFixed(1);
+$gw-app--WestPanel--border-right--col: $gw-app--border--col;
+
+$gw-app--TitleBar--screen--col: $gw-app--NorthPanel--button--col;
+$gw-app--TitleBar--screen--font-weight: bold;
+$gw-app--TitleBar--screen--font-size-em: gw-emFixed(1.16);
+
+$gw-app--tables--rows--even: #e6f3ff;
+
+$gw-logo--path: "../../logos/";
+$gw-app--Logo--app--uri: url($gw-logo--path + "WhiteAppLogo.svg");

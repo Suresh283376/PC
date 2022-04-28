@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<subtype
+  xmlns="http://guidewire.com/datamodel"
+  desc="Homeowners line of business"
+  displayName="Homeowners"
+  entity="HOPLine"
+  supertype="PolicyLine">
+  <implementsEntity
+    name="Coverable"/>
+  <implementsInterface
+    iface="gw.api.domain.CoverableAdapter"
+    impl="gw.lob.hop.HOPLineCoverableModifiableAdapter"/>
+  <implementsEntity
+    name="Modifiable"/>
+  <implementsInterface
+    iface="gw.api.domain.ModifiableAdapter"
+    impl="gw.lob.hop.HOPLineCoverableModifiableAdapter"/>
+  <column
+    desc="Internal field for storing the reference date of this entity on bound policy periods."
+    name="ReferenceDateInternal"
+    nullok="true"
+    type="datetime"/>
+</subtype>

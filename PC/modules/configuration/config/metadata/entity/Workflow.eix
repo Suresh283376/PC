@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<internalExtension
+  xmlns="http://guidewire.com/datamodel"
+  entityName="Workflow">
+  <implementsEntity
+    name="FrozenSetMember"/>
+  <edgeForeignKey-override
+    name="Caller"
+    extractable="true"/>
+</internalExtension>

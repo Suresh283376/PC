@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.gosu-lang.gosu</groupId>
+  <artifactId>gradle-gosu-plugin</artifactId>
+  <version>0.3.6</version>
+  <name>gradle-gosu-plugin</name>
+  <description>Gosu language compiler for Gradle.  Built with Gradle 4.5.
+
+This has also been tested extensively with Gradle version(s): 2.12, 2.13, 2.14.1, 3.0, 3.1, 3.2.1, 3.3, 3.4.1, 3.5, 4.0.2, 4.1, 4.2.1, 4.3.1, 4.4.1, 4.6-20180131001913+0000
+
+** Gradle versions below 2.12 are no longer supported **
+
+Projects applying this plugin require a compile-time dependency on the gosu-core-api library.  
+
+This version requires Gosu 1.13.9 or greater, or 1.14.2 or greater. 
+
+Please include this in the depencencies closure:
+
+dependencies {
+    compile group: 'org.gosu-lang.gosu', name: 'gosu-core-api', version: '1.14.7'
+}
+</description>
+  <url>http://gosu-lang.github.io/</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>The Gosu Team</name>
+      <email>gosu.lang.team@gmail.com</email>
+      <organization>org.apache.maven.model.Organization@7752b14c</organization>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git@github.com:gosu-lang/gosu-lang.git</connection>
+    <developerConnection>scm:git:git@github.com:gosu-lang/gosu-lang.git</developerConnection>
+    <url>git@github.com:gosu-lang/gosu-lang.git</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.easytesting</groupId>
+      <artifactId>fest-assert</artifactId>
+      <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.spockframework</groupId>
+      <artifactId>spock-core</artifactId>
+      <version>1.0-groovy-2.4</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+</project>

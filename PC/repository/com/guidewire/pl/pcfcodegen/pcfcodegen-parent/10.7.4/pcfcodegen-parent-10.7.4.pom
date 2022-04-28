@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.guidewire.pl.pcfcodegen</groupId>
+  <artifactId>pcfcodegen-parent</artifactId>
+  <version>10.7.4</version>
+  <name>PCF Code Generator Parent POM</name>
+  <packaging>pom</packaging>
+
+  <organization>
+    <name>Guidewire, Inc.</name>
+    <url>http://guidewire.com</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>Guidewire proprietary license</name>
+    </license>
+  </licenses>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <modules>
+    <module>pcfcodegen</module>
+    <module>pcfschema</module>
+    <module>pcfxml</module>
+    <module>pcfverifier</module>
+	<module>pcfcodegen-gradle-executor</module>
+  </modules>
+
+  <scm>
+    <developerConnection>scm:git:ssh://git@stash.guidewire.com/pl/pcfcodegen.git</developerConnection>
+    <connection>scm:git:https://idubrov@stash.guidewire.com/scm/pl/pcfcodegen.git</connection>
+    <tag>release/v10.7.4</tag>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.4.2</version>
+        <configuration>
+          <tagNameFormat>release/v@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <repositories>
+    <repository>
+      <id>gw.thirdparty</id>
+      <url>https://nexus.guidewire.com/content/repositories/thirdparty/</url>
+      <name>Guidewire Nexus repository for third party libs not in Central</name>
+    </repository>
+    <repository>
+      <id>gw.releases.group</id>
+      <url>https://nexus.guidewire.com/content/groups/releases-group/</url>
+      <name>Guidewire internal releases repository</name>
+    </repository>
+    <repository>
+      <id>gw.snapshots.group</id>
+      <url>https://nexus.guidewire.com/content/groups/snapshots-group/</url>
+      <name>Guidewire internal snapshots repository</name>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>gw.releases.build</id>
+      <url>https://nexus.guidewire.com/content/repositories/releases/</url>
+      <name>Guidewire internal releases repository</name>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <distributionManagement>
+    <repository>
+      <id>com.guidewire.pl.releases</id>
+      <url>https://nexus.guidewire.com/content/repositories/releases/</url>
+      <name>Guidewire internal releases repository</name>
+    </repository>
+    <snapshotRepository>
+      <id>com.guidewire.pl.snapshots-dev</id>
+      <url>https://nexus.guidewire.com/content/repositories/snapshots-dev/</url>
+      <name>Guidewire internal snapshots repository</name>
+    </snapshotRepository>
+  </distributionManagement>
+  
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.guidewire.pl.codegen</groupId>
+        <artifactId>codegen-api</artifactId>
+        <version>0.14</version>
+      </dependency>
+      <dependency>
+        <groupId>com.guidewire.pl.pcf</groupId>
+        <artifactId>pcf-api</artifactId>
+        <version>0.14</version>
+      </dependency>
+      <dependency>
+        <groupId>com.guidewire.xml.simple</groupId>
+        <artifactId>simplexml</artifactId>
+        <version>1.6</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  
+</project>

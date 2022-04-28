@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<typelistextension xmlns="http://guidewire.com/typelists" name="ILElementType" desc="The type describing how the logging element is handled (e.g. Profiler-based, manual)">
+  <typecode
+    code="job"
+    desc="The logging element handled by the code related to jobs in PC"
+    name="Job"/>
+</typelistextension>

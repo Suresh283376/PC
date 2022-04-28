@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.guidewire.pl.codemodel</groupId>
+  <artifactId>codemodel</artifactId>
+  <version>0.38</version>
+  <name>Code Model</name>
+  <description>
+    Library for generating Java and Gosu code.
+  </description>
+
+  <organization>
+    <name>Guidewire, Inc.</name>
+    <url>http://guidewire.com</url>
+  </organization>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <scm>
+    <developerConnection>scm:git:ssh://git@stash.guidewire.com/pl/codemodel.git</developerConnection>
+    <connection>scm:git:https://idubrov@stash.guidewire.com/scm/pl/codemodel.git</connection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>gw.thirdparty</id>
+      <url>http://nexus.guidewire.com/content/repositories/thirdparty/</url>
+      <name>Guidewire Nexus repository for third party libs not in Central</name>
+    </repository>
+    <repository>
+      <id>gw.releases.group</id>
+      <url>http://nexus/content/groups/releases-group/</url>
+      <name>Guidewire internal releases repository</name>
+    </repository>
+    <repository>
+      <id>gw.snapshots.group</id>
+      <url>http://nexus/content/groups/snapshots-group/</url>
+      <name>Guidewire internal snapshots repository</name>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>com.guidewire.pl.releases</id>
+      <url>http://nexus/content/repositories/releases/</url>
+      <name>Guidewire internal releases repository</name>
+    </repository>
+    <snapshotRepository>
+      <id>com.guidewire.snapshots-dev</id>
+      <url>http://nexus/content/repositories/snapshots-dev/</url>
+      <name>Guidewire internal snapshots repository</name>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>

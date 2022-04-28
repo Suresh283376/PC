@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.guidewire.pl.xml</groupId>
+  <artifactId>xml-api</artifactId>
+  <version>0.2</version>
+  <name>XML API</name>
+  <description>
+    Common interfaces for decoupling the XML code generator and Studio
+  </description>
+
+  <organization>
+    <name>Guidewire, Inc.</name>
+    <url>http://guidewire.com</url>
+  </organization>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <scm>
+    <developerConnection>scm:git:ssh://git@stash.guidewire.com/pl/xml-api.git</developerConnection>
+    <connection>scm:git:https://git@stash.guidewire.com/scm/pl/xml-api.git</connection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>gw.releases</id>
+      <name>Guidewire internal releases repository</name>
+      <url>http://nexus.guidewire.com/content/repositories/releases</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+        
+  <distributionManagement>
+    <repository>
+      <id>com.guidewire.pl.releases</id>
+      <url>http://nexus/content/repositories/releases/</url>
+      <name>Guidewire internal releases repository</name>
+    </repository>
+    <snapshotRepository>
+      <id>com.guidewire.snapshots-dev</id>
+      <url>http://nexus/content/repositories/snapshots-dev/</url>
+      <name>Guidewire internal snapshots repository</name>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.guidewire.xml.simple</groupId>
+      <artifactId>simplexml</artifactId>
+      <version>1.6</version>
+    </dependency>
+  </dependencies>
+  
+</project>
