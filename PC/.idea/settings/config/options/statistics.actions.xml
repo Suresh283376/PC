@@ -3,7 +3,7 @@
     <counts>
       <entry action="ActivateProjectToolWindow" count="1" />
       <entry action="ChangesView.AddUnversioned.From.Dialog" count="8" />
-      <entry action="CheckinProject" count="5" />
+      <entry action="CheckinProject" count="7" />
       <entry action="EditorPaste" count="1" />
       <entry action="Git.Fetch" count="3" />
       <entry action="Git.Pull" count="4" />
