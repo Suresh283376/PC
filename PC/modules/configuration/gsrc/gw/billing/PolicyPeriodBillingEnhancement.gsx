@@ -51,7 +51,7 @@ enhancement PolicyPeriodBillingEnhancement : entity.PolicyPeriod {
       }
       return supportedMethods
     } catch (e : Exception) {
-      PCLoggerCategory.BILLING_SYSTEM_PLUGIN.error("Problem getting BillingMethods, returning an empty collection", e)
+      PCLoggerCategory.BILLING_SYSTEM_PLUGIN.error("Test Problem getting BillingMethods, returning an empty collection", e)
       return {}
     }
   }
