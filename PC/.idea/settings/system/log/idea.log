@@ -1,0 +1,53 @@
+2022-04-28 12:49:25,660 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2022-04-28 12:49:25,671 [     11]   INFO -        #com.intellij.idea.Main - IDE: Guidewire Studio (build #Studio-2.0, 28 Apr 2022 12:25) 
+2022-04-28 12:49:25,671 [     11]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2022-04-28 12:49:25,671 [     11]   INFO -        #com.intellij.idea.Main - JRE: 1.8.0_152-release-1024-b15 (JetBrains s.r.o) 
+2022-04-28 12:49:25,671 [     11]   INFO -        #com.intellij.idea.Main - JVM: 25.152-b15 (OpenJDK 64-Bit Server VM) 
+2022-04-28 12:49:25,673 [     13]   INFO -        #com.intellij.idea.Main - JVM Args: -Xbootclasspath/a:../lib/boot.jar -XX:ReservedCodeCacheSize=240m -ea -Didea.properties.file=C:/Develop/PC/.idea/settings/idea.properties -Dstudio.sdkroot=C:/Develop/PC -Didea.plugins.compatible.build=173.4674.33 -Dstudio.minimum.preferred.idea.version=173.3942 -Dfile.encoding=UTF-8 -Dide.tooltip.dismissDelay=60000 -Dapple.laf.useScreenMenuBar=true -Dapple.awt.application.name=Guidewire Studio -Didea.platform.prefix=Studio -Djdk.util.zip.ensureTrailingSlash=false -Xmx4g 
+2022-04-28 12:49:25,676 [     16]   INFO -        #com.intellij.idea.Main - ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@3f046141[Running, parallelism = 7, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0] 
+2022-04-28 12:49:25,676 [     16]   INFO -        #com.intellij.idea.Main - ext: C:\Develop\PC\studio\sdk\jre\jre-win\lib\ext: [access-bridge-64.jar, cldrdata.jar, dnsns.jar, jaccess.jar, jfxrt.jar, localedata.jar, meta-index, nashorn.jar, sunec.jar, sunjce_provider.jar, sunmscapi.jar, sunpkcs11.jar, zipfs.jar] 
+2022-04-28 12:49:25,676 [     16]   INFO -        #com.intellij.idea.Main - JNU charset: Cp1252 
+2022-04-28 12:49:25,693 [     33]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 17 ms 
+2022-04-28 12:49:25,696 [     36]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2022-04-28 12:49:25,703 [     43]   INFO -     #com.intellij.util.ui.JBUI - User scale factor: 1.0 
+2022-04-28 12:49:25,703 [     43]   INFO -     #com.intellij.util.ui.JBUI - System scale factor: 1.0 (IDE-managed HiDPI) 
+2022-04-28 12:49:26,325 [    665]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-groovy.xml 
+2022-04-28 12:49:26,507 [    847]   INFO - llij.ide.plugins.PluginManager - Plugin 'Bytecode Viewer' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,510 [    850]   INFO - llij.ide.plugins.PluginManager - Plugin 'CVS Integration' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,512 [    852]   INFO - llij.ide.plugins.PluginManager - Plugin 'Subversion Integration' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,513 [    853]   INFO - llij.ide.plugins.PluginManager - Plugin 'XPathView + XSLT Support' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,514 [    854]   INFO - llij.ide.plugins.PluginManager - Plugin 'XSLT-Debugger' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,516 [    856]   INFO - llij.ide.plugins.PluginManager - Plugin 'Copyright' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,516 [    856]   INFO - llij.ide.plugins.PluginManager - Plugin 'Ant Support' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,517 [    857]   INFO - llij.ide.plugins.PluginManager - Plugin 'TestNG-J' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,518 [    858]   INFO - llij.ide.plugins.PluginManager - Plugin 'Task Management' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,520 [    860]   INFO - llij.ide.plugins.PluginManager - Plugin 'UI Designer' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,521 [    861]   INFO - llij.ide.plugins.PluginManager - Plugin 'Mercurial Integration' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,522 [    862]   INFO - llij.ide.plugins.PluginManager - Plugin 'EditorConfig' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,523 [    863]   INFO - llij.ide.plugins.PluginManager - Plugin 'IntelliLang' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,523 [    863]   INFO - llij.ide.plugins.PluginManager - Plugin 'Eclipse Integration' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,524 [    864]   INFO - llij.ide.plugins.PluginManager - Plugin 'Maven Integration' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,526 [    866]   INFO - llij.ide.plugins.PluginManager - Plugin 'Gradle' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,532 [    872]   INFO - llij.ide.plugins.PluginManager - Plugin 'Plugin DevKit' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,533 [    873]   INFO - llij.ide.plugins.PluginManager - Plugin 'Android Support' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,538 [    878]   INFO - llij.ide.plugins.PluginManager - Plugin 'Kotlin' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,541 [    881]   INFO - llij.ide.plugins.PluginManager - Plugin 'JavaFX' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,542 [    882]   INFO - llij.ide.plugins.PluginManager - Plugin 'Settings Repository' can't be loaded because: Plugin is disabled 
+2022-04-28 12:49:26,583 [    923]   INFO - llij.ide.plugins.PluginManager - 37 plugins initialized in 395 ms 
+2022-04-28 12:49:26,589 [    929]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Coverage (173.4674.33), Git Integration (8.1), GitHub (173.4674.33), Groovy (9.0), I18n for Java (173.4674.33), IDEA CORE (173.4674.33), JUnit (1.0), Java Stream Debugger (173.4674.33), Properties Support (173.4674.33), Swagger Plugin (1.0.8), Terminal (0.1), YAML (173.4674.33) 
+2022-04-28 12:49:26,589 [    929]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Gosu (2.0.4-rc-SNAPSHOT), Gosu Inspections Plugin (2.0.4-rc-SNAPSHOT), Guidewire Services Best Practices (2.0.4-rc-SNAPSHOT), Guidewire Studio (2.0.4-rc-SNAPSHOT) 
+2022-04-28 12:49:26,589 [    929]   INFO - llij.ide.plugins.PluginManager - Disabled plugins: Android Support (10.2.3), Ant Support (1.0), Bytecode Viewer (0.1), CVS Integration (11), Copyright (8.1), Eclipse Integration (3.0), EditorConfig (173.4674.33), Gradle (173.4674.33), IntelliLang (8.0), JavaFX (1.0), Kotlin (1.2.10-release-IJ2017.3-1), Maven Integration (173.4674.33), Mercurial Integration (10.0), Plugin DevKit (1.0), Settings Repository (173.4674.33), Subversion Integration (1.1), Task Management (1.0), TestNG-J (8.0), UI Designer (173.4674.33), XPathView + XSLT Support (4), XSLT-Debugger (1.4) 
+2022-04-28 12:49:26,844 [   1184]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted: 'C:\Develop\PC\.idea\settings\system\caches\names.dat' does not exist 
+2022-04-28 12:49:26,845 [   1185]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=3621 
+2022-04-28 12:49:26,875 [   1215]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\Develop\PC\studio\sdk\bin\fsnotifier64.exe 
+2022-04-28 12:49:26,891 [   1231]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2022-04-28 12:49:27,273 [   1613]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2022-04-28 12:49:27,273 [   1613]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2022-04-28 12:49:27,326 [   1666]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.ide.ui.OptionsTopHitProvider$Activity@250be309 
+2022-04-28 12:49:27,391 [   1731]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2022-04-28 12:49:27,484 [   1824]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2022-04-28 12:49:27,503 [   1843]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2022-04-28 12:49:27,630 [   1970]   INFO - il.indexing.FileBasedIndexImpl - Index exts enumerated:102 
+2022-04-28 12:49:27,635 [   1975]   INFO - il.indexing.FileBasedIndexImpl - Index scheduled:4 
+2022-04-28 12:49:27,653 [   1993]   INFO - tellij.psi.stubs.StubIndexImpl - All stub exts enumerated:16 
+2022-04-28 12:49:27,654 [   1994]   INFO - tellij.psi.stubs.StubIndexImpl - stub exts update scheduled:0 
